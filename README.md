@@ -46,7 +46,7 @@ git clone --depth 1 https://github.com/rickiepark/llm-from-scratch.git
 
 | 제목                                              | 메인 코드                                                                                                    | 모든 코드 + 부록      |
 |------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|-------------------------------|
-| [Setup recommendations](setup)                             | -                                                                                                                               | -                             |
+| [Setup recommendations](setup) <br/>[이 책을 읽는 최선의 방법](https://sebastianraschka.com/blog/2025/reading-books.html)                             | -                                                                                                                               | -                             |
 | 1장: 대규모 언어 모델 이해하기                  | 코드 없음                                                                                                                         | -                             |
 | 2장: 텍스트 데이터 다루기                               | - [ch02.ipynb](ch02/01_main-chapter-code/ch02.ipynb)<br/>- [dataloader.ipynb](ch02/01_main-chapter-code/dataloader.ipynb) (요약)<br/>- [exercise-solutions.ipynb](ch02/01_main-chapter-code/exercise-solutions.ipynb)               | [./ch02](./ch02)            |
 | 3장: 어텐션 메커니즘 구현하기                          | - [ch03.ipynb](ch03/01_main-chapter-code/ch03.ipynb)<br/>- [multihead-attention.ipynb](ch03/01_main-chapter-code/multihead-attention.ipynb) (요약) <br/>- [exercise-solutions.ipynb](ch03/01_main-chapter-code/exercise-solutions.ipynb)| [./ch03](./ch03)             |
@@ -102,7 +102,7 @@ LLM이 심층 신경망을 기반으로 구축되므로 이에 대한 경험이 
 
 - **설정**
   - [Python Setup Tips](setup/01_optional-python-setup-preferences)
-  - [Installing Python Packages and Libraries Used In This Book](setup/02_installing-python-libraries)
+  - [Installing Python Packages and Libraries Used in This Book](setup/02_installing-python-libraries)
   - [Docker Environment Setup Guide](setup/03_optional-docker-environment)
 - **2장: 텍스트 데이터 다루기**
   - [Byte Pair Encoding (BPE) Tokenizer From Scratch](ch02/05_bpe-from-scratch/bpe-from-scratch-simple.ipynb)
@@ -115,10 +115,11 @@ LLM이 심층 신경망을 기반으로 구축되므로 이에 대한 경험이 
 - **4장: 밑바닥부터 GPT 모델 구현하기**
   - [FLOPS Analysis](ch04/02_performance-analysis/flops-analysis.ipynb)
   - [KV Cache](ch04/03_kv-cache)
-  - [Attention alternatives](ch04/#attention-alternatives)
+  - [Attention Alternatives](ch04/#attention-alternatives)
     - [Grouped-Query Attention](ch04/04_gqa)
     - [Multi-Head Latent Attention](ch04/05_mla)
     - [Sliding Window Attention](ch04/06_swa)
+    - [Gated DeltaNet](ch04/08_deltanet)
   - [Mixture-of-Experts (MoE)](ch04/07_moe)
 - **5장: 레이블이 없는 데이터를 활용한 사전 훈련**
   - [Alternative Weight Loading Methods](ch05/02_alternative_weight_loading/)
@@ -127,12 +128,15 @@ LLM이 심층 신경망을 기반으로 구축되므로 이에 대한 경험이 
   - [Optimizing Hyperparameters for Pretraining](ch05/05_bonus_hparam_tuning)
   - [Building a User Interface to Interact With the Pretrained LLM](ch05/06_user_interface)
   - [Converting GPT to Llama](ch05/07_gpt_to_llama)
-  - [Llama 3.2 From Scratch](ch05/07_gpt_to_llama/standalone-llama32.ipynb)
-  - [Qwen3 Dense and Mixture-of-Experts (MoE) From Scratch](ch05/11_qwen3/)
   - [Gemma 3 From Scratch](ch05/12_gemma3/)
   - [Memory-efficient Model Weight Loading](ch05/08_memory_efficient_weight_loading/memory-efficient-state-dict.ipynb)
   - [Extending the Tiktoken BPE Tokenizer with New Tokens](ch05/09_extending-tokenizers/extend-tiktoken.ipynb)
   - [PyTorch Performance Tips for Faster LLM Training](ch05/10_llm-training-speed)
+  - [LLM Architectures](ch05/#llm-architectures-from-scratch)
+    - [Llama 3.2 From Scratch](ch05/07_gpt_to_llama/standalone-llama32.ipynb)
+    - [Qwen3 Dense and Mixture-of-Experts (MoE) From Scratch](ch05/11_qwen3/)
+    - [Gemma 3 From Scratch](ch05/12_gemma3/)
+    - [Olmo 3 From Scratch](ch05/13_olmo3/)
 - **6장: 분류를 위해 미세 튜닝하기**
   - [Additional experiments finetuning different layers and using larger models](ch06/02_bonus_additional-experiments)
   - [Finetuning different models on 50k IMDB movie review dataset](ch06/03_bonus_imdb-classification)
@@ -144,4 +148,4 @@ LLM이 심층 신경망을 기반으로 구축되므로 이에 대한 경험이 
   - [Improving a Dataset for Instruction Finetuning](ch07/05_dataset-generation/reflection-gpt4.ipynb)
   - [Generating a Preference Dataset with Llama 3.1 70B and Ollama](ch07/04_preference-tuning-with-dpo/create-preference-data-ollama.ipynb)
   - [Direct Preference Optimization (DPO) for LLM Alignment](ch07/04_preference-tuning-with-dpo/dpo-from-scratch.ipynb)
-  - [Building a User Interface to Interact With the Instruction Finetuned GPT Model](ch07/06_user_interface)
+  - [Building a User Interface to Interact With the Instruction-Finetuned GPT Model](ch07/06_user_interface)

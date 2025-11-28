@@ -14,7 +14,7 @@
 
 ### 동영상 강의
 
-* 인프런에 도서에 포함된 예제와 추가 자료에 대한 [해설 강의](https://inf.run/wQDh8)가 있습니다.
+* 인프런에 도서에 포함된 예제와 추가 자료에 대한 **[해설 강의](https://inf.run/wQDh8)** 가 있습니다.
 * [도서 소개 영상](https://youtu.be/R80Gfde4cpg?list=PLJN246lAkhQhgakhcxz-5GwG_NYuJgSv1)
 * [유튜브 동영상 강의](https://www.youtube.com/playlist?list=PLJN246lAkhQhgakhcxz-5GwG_NYuJgSv1)
 * [공식 코드 저장소](https://github.com/rickiepark/llm-from-scratch)
